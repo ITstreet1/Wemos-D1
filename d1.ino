@@ -6,10 +6,10 @@
  */
 #include <ESP8266WiFi.h>
 // WiFi podaci za konekciju na lokalnu mrežu
-const char ssid[] = "dekip_network";
-const char password[] = "0611975itstreet";
+const char ssid[] = "***vaš SSID*****";
+const char password[] = "****vaša lozinka****";
 // lokacija udaljenog servera, može biti IP adresa ili URL adresa
-const char webServer[] = "www.itstreet.org";
+const char webServer[] = "***naziv ili IP servera ****";
 const int httpPort = 80;
 WiFiClient client;
 // LM35 setup
@@ -35,7 +35,7 @@ void loop() {
   if (client.connect(webServer, httpPort) ) {
   Serial.println("Povezan na udaljeni server!");
   // šaljemo GET zahtev
-  client.print("GET /test/index.php?lm35=");
+  client.print("GET /index.php?lm35=");
   client.print(temp);
   // po potrebi se može dodsti još senzora a njihove vrednosti poslati u nizu GET zahteva
   //client.print("&drugiSenzor=");

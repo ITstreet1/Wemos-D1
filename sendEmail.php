@@ -7,7 +7,7 @@
  */
 $lm35 = $_GET["lm35"];
 $text ="Temperatura: ".$lm35." C";
-$email 	= "dekip@beotel.rs";
+$email 	= "neko@negde.rs"; // mejl na koji će nam stizati temperaturna očitavanja
 $from 	= "Arduino@no.limits";
 $subject ="Očitavanje temperature van lokalne mreže";
 //send email

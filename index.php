@@ -56,6 +56,6 @@ if($count > 0){
 </head>
 
 <body>
-<div id="curve_chart" style="width: 900px; height: 500px"></div>
+<div id="curve_chart" style="width: 1900px; height: 500px"></div>
 </body>
 </html>

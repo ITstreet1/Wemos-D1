@@ -5,7 +5,7 @@
  * Date: 31/12/2017
  * Wemos D1, LM35
  */
-include "../include/connect_to_mysql.php";
+include "connect_to_mysql.php"; // php fajl preko koga ćemo se konektovati na bazu podataka
 $output = '';
 $chartOutput='';
 if(isset($_GET['lm35']) && $_GET['lm35'] != ""){

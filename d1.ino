@@ -28,7 +28,7 @@ void setup() {
 }
 void loop() {
   // malo matematike za dobijanje ispravne vrednosti
-  temp = ((3.3*analogRead(tempPin)*100.0)/1024)*0.85;
+  temp = (3.3*analogRead(tempPin)*100.0)/1024;
   Serial.print("temp ");
   Serial.println(temp);
   // povezujemo se na udaljeni server

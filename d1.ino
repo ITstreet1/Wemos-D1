@@ -29,14 +29,15 @@ void setup() {
 void loop() {
   // malo matematike za dobijanje ispravne vrednosti
   temp = (3.3*analogRead(tempPin)*100.0)/1024;
-  Serial.print("temp ");
-  Serial.println(temp);
   // povezujemo se na udaljeni server
   if (client.connect(webServer, httpPort) ) {
   Serial.println("Povezan na udaljeni server!");
   // šaljemo GET zahtev
   client.print("GET /index.php?lm35=");
   client.print(temp);
+  //Serial.println("Ocitana vrednost je poslata na server!");
+  //Serial.print("temp ");
+  //Serial.println(temp);
   // po potrebi se može dodsti još senzora a njihove vrednosti poslati u nizu GET zahteva
   //client.print("&drugiSenzor=");
   //client.print(vrednost);
@@ -46,7 +47,7 @@ void loop() {
   client.println("Connection: close");
   Serial.println("Konekcija zatvorena");
   client.println();
-  delay(60000);
+  delay(600000);
   } 
 }
  

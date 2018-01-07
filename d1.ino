@@ -38,7 +38,7 @@ void loop() {
   //Serial.println("Ocitana vrednost je poslata na server!");
   //Serial.print("temp ");
   //Serial.println(temp);
-  // po potrebi se može dodsti još senzora a njihove vrednosti poslati u nizu GET zahteva
+  // po potrebi se može dodati još senzora a njihove vrednosti poslati u nizu GET zahteva
   //client.print("&drugiSenzor=");
   //client.print(vrednost);
   client.println(" HTTP/1.1");

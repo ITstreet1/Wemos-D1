@@ -1,6 +1,6 @@
 <?php
 /*
- * Skeč za potrebe članka u Svetu Kompjutera
+ * PHP fajl za potrebe članka u Svetu Kompjutera
  * Author: Petrović Dejan
  * Date: 31/12/2017
  * Wemos D1, LM35
